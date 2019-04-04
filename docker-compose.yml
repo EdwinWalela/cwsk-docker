@@ -1,0 +1,14 @@
+version: '3'
+services:
+ api:
+  container_name: api_nodejs
+  restart: always
+  build: ./api
+  ports:
+   - '5000:5000'
+ vue:
+  container_name: frontend_vue
+  restart: always
+  build: ./vue
+  ports:
+   - '8080:8080'
