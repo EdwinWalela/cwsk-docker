@@ -3,12 +3,12 @@ services:
  api:
   container_name: api_nodejs
   restart: always
-  build: ./api
+  image: edwinwalela/cwsk-restapi:v1
   ports:
    - '5000:5000'
  vue:
   container_name: frontend_vue
   restart: always
-  build: ./vue
+  image: edwinwalela/cwsk-vue-frontend:v1
   ports:
-   - '8080:8080'
+   - '80:8080'
